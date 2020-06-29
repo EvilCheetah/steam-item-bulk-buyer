@@ -1,6 +1,8 @@
 '''
 	Author: Eugene Moshchyn
 	
+	Python Version: Python 3.7+
+	
 	Purpose:
 		- If you are buying items from the Steam Store in bulk,
 		  you could notice that some items are stored in single cell
