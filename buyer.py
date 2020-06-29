@@ -20,17 +20,13 @@
 
 DRIVER_PATH = "D:\chromedriver.exe"
 
+LOGIN_PAGE  = "https://steamcommunity.com/login/"
+
 
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from time import sleep
-from bs4 import BeautifulSoup
-import re
-from time import sleep
-
-
-LOGIN_PAGE  = "https://steamcommunity.com/login/"
 
 
 class itemBuyer:
@@ -68,8 +64,10 @@ class itemBuyer:
 			input() 
 			
 			for URL, amount in self._itemList.items():
+				
 				print("\nCurrently processing:")
 				print(URL)
+				
 				for i in range(amount):
 					actions  = ActionChains(driver)
 					driver.get(URL)
