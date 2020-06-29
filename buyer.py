@@ -1,6 +1,8 @@
 '''
 	Author: Eugene Moshchyn
 	
+	Python Version: Python 3.7+
+	
 	Purpose:
 		- If you are buying items from the Steam Store in bulk,
 		  you could notice that some items are stored in single cell
@@ -17,9 +19,6 @@
 				https://sites.google.com/a/chromium.org/chromedriver/downloads
 '''
 
-
-DRIVER_PATH = "D:\chromedriver.exe"
-
 LOGIN_PAGE  = "https://steamcommunity.com/login/"
 
 
@@ -27,7 +26,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from time import sleep
-
+from DRIVER_PATH import DRIVER_PATH
 
 class itemBuyer:
 	def __init__(self):
