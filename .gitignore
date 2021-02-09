@@ -1,0 +1,5 @@
+# Ignore Environment
+venv/
+
+# Ignore Cache fiels
+__pycache__/
