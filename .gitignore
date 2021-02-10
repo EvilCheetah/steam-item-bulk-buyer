@@ -1,5 +1,7 @@
 # Ignore Environment
 venv/
 
+chromedriver.*
+
 # Ignore Cache fiels
 __pycache__/
